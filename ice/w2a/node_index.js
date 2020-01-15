@@ -7,7 +7,7 @@ function scopeDemo(x1) {
     x1[0]=500;
     console.log(a);
     console.log(b);
-    console.log(c);
+    console.log(c); 
     if(true) {
         var x = 0;
     }
