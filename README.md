@@ -7,4 +7,4 @@ The *ice* folder contains in-class exercises.
 ## About Me
 Myles Waite
 https://www.linkedin.com/in/myles-lorenz-0417a2167/
-I would like a position as a developer as it suits my interests and talents.
+I would like a position as a developer as it suits my interests and talents. I prefer coding over designing, but am capable in both.
