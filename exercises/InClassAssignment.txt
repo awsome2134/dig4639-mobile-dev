@@ -1,0 +1,33 @@
+Users: awsome2134
+
+Website: https://www.greymuzzle.org
+
+summary of actions: User clicks a button/text in the top of the web page, a CSS file 
+	becomes included, a JavaScript function/event listener is called, screen changes based
+	on which button is pushed; font-family/font-style changes for better readability, ;
+	images are invisible, background becomes black and all text becomes yellow, the last 
+	three affect text-size. It either shrinks it, returns to default, or increases the 
+	size.
+	
+Explanation:
+	Event=("click", function(passed value));
+	
+	function(passed value){
+		if(passed value == first option){
+			include(first option css file);
+		}
+		elseif(passed value == second option){
+			include(second option css file);
+		}
+		else{
+			if(passed value == smaller){
+				include(smaller text css file);  or change SASS or LESS (font-size--);
+			}
+			elseif(passed value == larger){
+				include(larger text css file);   or change SASS or LESS (font-size--);
+			}
+			else{
+				reintroduce original css file  or remove extra CSS file that are not 
+				original
+			}
+		}
