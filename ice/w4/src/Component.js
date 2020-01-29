@@ -8,7 +8,7 @@ class Component {
         console.log("Clicked");
     }
     render() {
-        return `<div></div>`;
+
     }
 
 }
