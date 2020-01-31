@@ -5,4 +5,4 @@ let adder=new Adder({
     "b": 10
 });
 
-adder.render();
+console.log(adder.render());
