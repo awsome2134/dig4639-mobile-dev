@@ -14,12 +14,24 @@ class Task {
         this.element.appendChild(span);
         span.innerHTML = this.props.content;
         this.element.className = "task";
+
+        let button = document.createElement("button");
+        button.id="deleteTask";
+        button.innerHTML="Delete";
+        //button.addEventListener("click", this.remove);
+        this.element.appendChild(button);
+        
     }
     onClick(e) {
         console.log(this);
         console.log(e.target);
         console.log(e.target.checked);
     }
+
+    remove(){
+        this.element.remove();
+    }
+
     render() {
         return this.element;
     }
