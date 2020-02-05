@@ -1,6 +1,6 @@
 @media screen and (max-width: 750px) {
     .task {
-        background: gray;
+        background: lightgray;
         width: 400px;
     }
     input[type="checkbox"]:checked + span {
