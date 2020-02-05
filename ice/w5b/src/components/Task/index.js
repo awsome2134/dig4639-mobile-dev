@@ -25,7 +25,9 @@ class Task {
     onClick(e) {
         console.log(this);
         console.log(e.target);
-        console.log(e.target.checked);
+        console.log(e.target.checked)
+        this.props.done=e.target.checked;
+        console.log(this.props.done);
     }
 
     remove(){
