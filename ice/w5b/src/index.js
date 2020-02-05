@@ -21,6 +21,7 @@ function onClick() {
     } else {
         alert("Please enter text");
     }
+    input.value="";
 }
 
 window.addEventListener("DOMContentLoaded", runOnLoad);
