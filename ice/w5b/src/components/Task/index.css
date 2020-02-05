@@ -4,27 +4,53 @@
         width: 400px;
     }
     input[type="checkbox"]:checked + span {
-        background: green;
+        background: yellowgreen;
         font-weight: bold;
     }
     body {
         width: 400px;
         text-align: left;
     }
+    
 }
 
 @media screen and (min-width: 751px) {
     .task {
-        background: gray;
+        text-decoration: underline;
         width: 660px;
+        margin-top: 10px;
     }
     input[type="checkbox"]:checked + span {
-        background: green;
+        background: lightgreen;
         font-weight: bold;
+        padding: 5px;
     }
     body {
         width: 660px;
         text-align: left;
+    }
+    #deleteTask {
+        background-color: #eb3d3d;
+        color: white;
+        border: none;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-left: 20px;
+    }
+    #addTask {
+        background-color: black;
+        color: white;
+        margin-left: 50px;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
 }
 

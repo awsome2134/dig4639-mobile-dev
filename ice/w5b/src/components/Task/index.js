@@ -28,6 +28,11 @@ class Task {
         console.log(e.target.checked)
         this.props.done=e.target.checked;
         console.log(this.props.done);
+        if(e.target.checked== true){
+            this.element.style.textDecoration= "line-through";
+        }else{
+            this.element.style.textDecoration= "none";
+        }
         
     }
 
