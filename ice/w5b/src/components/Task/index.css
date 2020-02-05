@@ -3,8 +3,9 @@
         background: gray;
         width: 400px;
     }
-    body:checked {
-        color: green;
+    input[type="checkbox"]:checked + span {
+        background: green;
+        font-weight: bold;
     }
     body {
         width: 400px;
@@ -17,8 +18,9 @@
         background: gray;
         width: 660px;
     }
-    body:checked {
-        color: green;
+    input[type="checkbox"]:checked + span {
+        background: green;
+        font-weight: bold;
     }
     body {
         width: 660px;

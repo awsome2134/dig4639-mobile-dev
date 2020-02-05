@@ -18,7 +18,7 @@ class Task {
         let button = document.createElement("button");
         button.id="deleteTask";
         button.innerHTML="Delete";
-        //button.addEventListener("click", this.remove);
+        button.addEventListener("click", this.delete);
         this.element.appendChild(button);
         
     }
@@ -28,10 +28,11 @@ class Task {
         console.log(e.target.checked)
         this.props.done=e.target.checked;
         console.log(this.props.done);
+        
     }
 
-    remove(){
-        this.element.remove();
+    delete(){
+        this.parentNode.parentNode.removeChild(this.parentNode);
     }
 
     render() {
