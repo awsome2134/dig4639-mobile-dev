@@ -39,6 +39,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-left: 20px;
+        padding: 5px 10px;
     }
     #addTask {
         background-color: black;
