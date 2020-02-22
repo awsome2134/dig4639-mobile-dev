@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <Card content="This is a card!"></Card>
+        <Card content="This is a card!"></Card>
   );
 }
 

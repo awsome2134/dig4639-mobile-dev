@@ -4,7 +4,7 @@ import "./index.css";
 class Card extends React.Component{
     render (){
         return(
-            <div class="card">
+            <div className="card">
                 <h1>{this.props.content}</h1>
             </div>
         );
