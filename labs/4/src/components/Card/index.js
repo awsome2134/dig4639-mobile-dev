@@ -7,7 +7,7 @@ class Card extends React.Component{
             <div className="card">
                 <h3>{this.props.title}</h3>
                 <p>{this.props.content}</p>
-                <button className="close" value="close" onClick={() => this.props.removeCard(this.props.id)}>Close</button>
+                <button className="close" value="close" onClick={() => this.props.removeCard(this.props.id)}>X</button>
             </div>
         );
     }
