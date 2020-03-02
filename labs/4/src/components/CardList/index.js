@@ -18,7 +18,7 @@ class CardList extends React.Component{
               card_List.push({"id": this.currentId, "title": value.title, "content": value.content});
               this.currentId++;
           });
-          this.setState(cardList);
+          this.setState(cardList.cards);
           return card_List;
       }
 
@@ -26,6 +26,7 @@ class CardList extends React.Component{
         let cardList=this.card_List;
         cardList=cardList.filter((v) => v.id !== id);
         this.card_List=cardList;
+        this.setState(this.card_List);
     
       }
       render(){
