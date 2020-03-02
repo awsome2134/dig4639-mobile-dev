@@ -18,15 +18,13 @@ class CardList extends React.Component{
               card_List.push({"id": this.currentId, "title": value.title, "content": value.content});
               this.currentId++;
           });
-          console.log(card_List);
+          this.setState(cardList);
           return card_List;
       }
 
       removeCard(id){
-        console.log(this.card_List);
         let cardList=this.card_List;
         cardList=cardList.filter((v) => v.id !== id);
-        console.log(this.card_List);
         this.card_List=cardList;
     
       }
