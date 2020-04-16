@@ -14,7 +14,13 @@ class You extends React.Component {
   
     componentDidMount() {
   
-      fetch("http://plato.mrl.ai:8080/profile", {headers: {API: "waite"}})
+      fetch("http://plato.mrl.ai:8080/profile", {
+        "method": "GET",
+        headers: {
+          API: "waite"},
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        })
       .then((res) => res.json())
       .then((data) => {
         this.setState({name: data.name, count: data.count});

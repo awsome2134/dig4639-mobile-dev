@@ -11,7 +11,13 @@ class Show extends React.Component {
   
     componentDidMount() {
   
-      fetch("http://plato.mrl.ai:8080/contacts", {headers: {API: "waite"}})
+      fetch("http://plato.mrl.ai:8080/contacts", {
+        "method": "GET",
+        headers: {
+          API: "waite"},
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        })
       .then((res) => res.json())
       .then((data) => {
         this.setState({contacts: data.contacts});
