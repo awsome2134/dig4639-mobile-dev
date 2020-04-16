@@ -1,0 +1,26 @@
+.buttonclass {
+    padding: 15px 20px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 50px;
+    width: 150px;
+  }
+
+  .signclass {   
+    width: 40%;    
+    height: auto;    
+    padding: 10px 0px 10px 0px ;  
+    margin: 5px;
+    font: 400 12px system-ui;    
+    border-radius: 50px;
+    border: 2px solid #f6f6f6;   
+    text-align: center ;
+    background-color: aliceblue;
+  }
+  
+  .labelclass {
+    color: black;
+    font-size: 24px;    
+    font-family: 'cuprum', sans-serif;    
+    text-align: left;    
+    font-weight: bold;
+  }

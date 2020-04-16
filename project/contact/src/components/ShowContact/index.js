@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./index.css";
 class Show extends React.Component {
 
     constructor(props) {
@@ -24,7 +24,7 @@ class Show extends React.Component {
         <div>
          {
            this.state.contacts.map((value, index) => {
-             return <p key={index}>{value.name}<br/>{value.number}</p>;
+             return <p className="show" key={index}>{value.name}<br/>{value.number}</p>;
            })
          }
         </div>

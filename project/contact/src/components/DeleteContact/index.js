@@ -1,4 +1,5 @@
 import React from 'react';
+import "./index.css";
 
 class Delete extends React.Component {
 
@@ -41,8 +42,12 @@ class Delete extends React.Component {
         return (
           <div>
             <form onSubmit={this.getValue}>
-              <input type="number" ref={this.posRef} />
-              <input type="submit" value="SUBMIT"/>
+              <label className="labelclass" htmlFor="number">Position</label>
+              <input type="number" className="signclass" placeholder="0" ref={this.posRef} />
+
+              <br />
+
+              <input className="buttonclass" type="submit" value="SUBMIT"/>
             </form>
             <hr />
             <p>Removed: <br/> {this.state.removed.name} <br/> {this.state.removed.number}</p>

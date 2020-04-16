@@ -3,6 +3,7 @@ import AddContact from "./components/AddContact";
 import ShowContact from "./components/ShowContact";
 import DeleteContact from "./components/DeleteContact";
 import Profile from "./components/Profile";
+import "./App.css";
 
 class App extends React.Component{
 
@@ -19,10 +20,6 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        <button onClick={() => this.changeTask()}>Home</button>
-        <button onClick={() => this.changeTask("Add")}>Add Contact</button>
-        <button onClick={() => this.changeTask("Delete")}>Delete Contacts</button>
-        <button onClick={() => this.changeTask("Last")}>Total</button>
         <div id= "showingArea">
           { this.state.view === "Add" ?
             <AddContact></AddContact>
@@ -33,6 +30,12 @@ class App extends React.Component{
           : <ShowContact></ShowContact>
           }
         </div>
+        <nav id="navigation" className="btn-group">
+          <button className="buttonclass" onClick={() => this.changeTask()}>Home</button>
+          <button className="buttonclass" onClick={() => this.changeTask("Add")}>Add Contact</button>
+          <button className="buttonclass" onClick={() => this.changeTask("Delete")}>Delete Contacts</button>
+          <button className="buttonclass" onClick={() => this.changeTask("Last")}>Total</button>
+        </nav>
       </div>
     );
   }

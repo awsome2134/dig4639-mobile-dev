@@ -1,4 +1,5 @@
 import React from 'react';
+import "./index.css";
 
 class Add extends React.Component {
 
@@ -43,9 +44,17 @@ class Add extends React.Component {
         return (
           <div>
             <form onSubmit={this.getValue}>
-              <input type="text" ref={this.nameRef} />
-              <input type="text" ref={this.numberRef} />
-              <input type="submit" value="SUBMIT"/>
+              <label htmlFor="name" className="labelclass">Name</label>
+              <input type="text" name="name" className="signclass" placeholder="name" ref={this.nameRef} />
+
+              <br />
+
+              <label htmlFor="number" className="labelclass">Number</label>
+              <input type="text" name="number" className="signclass" placeholder="(555) 555-55555" ref={this.numberRef} />
+
+              <br />
+
+              <input type="submit" className="buttonclassclass" value="SUBMIT"/>
             </form>
             <hr />
             <p>Added: <br/> {this.state.added.name} <br/> {this.state.added.number}</p>
